@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="snake.css" />
+  </head>
+  <body>
+    <div id="gameContainer">
+      <button id="startButton">Spiel starten</button>
+      <div id="score">Punkte: 0</div>
+      <canvas id="canvas" width="480" height="480"></canvas>
+      <div id="pauseOverlay">PAUSIERT</div>
+      <div id="gameOverScreen" style="display: none">
+        <p>Game Over!</p>
+        <button id="restartButton">Erneut spielen</button>
+      </div>
+      <button id="howToPlayButton">Spielanleitung</button>
+      <div id="instructions" style="display: none">
+        <p>Spielanleitung:</p>
+        <ul>
+            <li>Mit den Pfeiltasten steuerst du die Schlange.</li>
+          <li>Punkte sammeln durch das Essen von gelben Quadraten.</li>
+          <li>Alle 50 Punkte erscheint eine Wand auf dem Spielfeld.</li>
+          <li>
+            Alle 100 Punkte erscheint ein Power-Up, welches kurzzeitig die Geschwindigkeit erhöht!
+          </li>
+          <li>Vermeide es, die Wände oder den eigenen Schwanz zu berühren!</li>
+        <li> Viel Spaß!</li>
+        </ul>
+        <button onclick="toggleInstructions()">Schließen</button>
+      </div>
+    </div>
+  </body>
+  <script src="snake.js"></script>
+</html>
